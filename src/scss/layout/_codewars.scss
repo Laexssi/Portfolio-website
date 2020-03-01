@@ -1,0 +1,93 @@
+.codewars {
+  background-color: $grey;
+  font-size: $p-size;
+  line-height: $p-line-height;
+  font-weight: normal;
+  color: white;
+  padding: 24px 0;
+  @media (max-width: 567px) {
+    font-size: $p-size-small;
+    line-height: $p-line-height-small;
+  }
+  &__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 567px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  &__source {
+    padding-left: 88px;
+    padding-right: 60px;
+    position: relative;
+    @media (max-width: 767px) {
+      padding-left: 38px;
+      padding-right: 24px;
+    }
+    @media (max-width: 567px) {
+      margin-bottom: 8px;
+      transform: translateX(-60px);
+    }
+    &:before {
+      content: url("../assets/images/codewars.svg");
+      position: absolute;
+      left: 0;
+      top: -12px;
+      display: block;
+      width: 56px;
+      height: 56px;
+      @media (max-width: 767px) {
+        content: url("../assets/images/codewars-small.svg");
+        top: 4px;
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+      @media (max-width: 567px) {
+        top: 0.5px;
+      }
+    }
+    &:after {
+      content: url("../assets/images/rect.svg");
+      position: absolute;
+      width: 23px;
+      height: 79px;
+      top: -24px;
+      right: 0;
+      @media (max-width: 767px) {
+        content: none;
+      }
+    }
+    a {
+      color: white;
+    }
+  }
+  &__stats {
+    padding-left: 165px;
+    position: relative;
+    @media (max-width: 767px) {
+      padding-left: 83px;
+    }
+    &:before {
+      content: url("../assets/images/4kyu.svg");
+      position: absolute;
+      left: 32px;
+      top: -5px;
+      display: block;
+      width: 100px;
+      height: 40px;
+      @media (max-width: 767px) {
+        content: url("../assets/images/4kyu-small.svg");
+        width: 71px;
+        height: 28px;
+        left: 0;
+        top: 1px;
+      }
+      @media (max-width: 567px) {
+        top: -4px;
+      }
+    }
+  }
+}

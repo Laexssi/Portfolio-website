@@ -1,0 +1,112 @@
+.cover {
+  background-color: $black;
+  margin-bottom: $vr1-large;
+  .cover__container {
+    padding-top: $vr5-large;
+    padding-bottom: $vr5-large;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding-top: $vr5-large;
+      padding-bottom: $vr5-large;
+    }
+    @media (max-width: 767px) {
+      padding-top: $vr5-small;
+      padding-bottom: $vr5-small;
+    }
+  }
+  &__flex {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $vr3-large;
+    width: 100%;
+    height: 124px;
+    @media (max-width: 767px) and (min-width: 568px) {
+      height: 96px;
+    }
+    @media (max-width: 567px) {
+      height: 48px;
+      margin-bottom: $vr3-small;
+    }
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+    span {
+      display: block;
+    }
+  }
+  &__text {
+    font-weight: 900;
+    font-style: normal;
+    font-family: $base-font-family;
+    text-transform: uppercase;
+    max-width: calc(100% - 15vw);
+
+    &--hello {
+      color: $oldlace;
+      font-size: $h1-size-large;
+      line-height: $h1-line-height-large;
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: $h1-size-medium;
+        line-height: $h1-line-height-medium;
+      }
+      @media (max-width: 767px) and (min-width: 568px) {
+        font-size: $h1-size-medium-small;
+        line-height: $h1-line-height-medium-small;
+      }
+      @media (max-width: 567px) {
+        font-size: $h1-size-small;
+        line-height: $h1-line-height-small;
+      }
+    }
+    &--name {
+      color: $coyotes;
+      font-size: $h2-size-large;
+      line-height: $h2-line-height-large;
+      @media (max-width: 767px) and (min-width: 568px) {
+        font-size: $h2-size-medium;
+        line-height: $h2-line-height-medium;
+      }
+      @media (max-width: 567px) {
+        font-size: $h2-size-small;
+        line-height: $h2-line-height-small;
+      }
+    }
+    &--grade {
+      color: $teal;
+      font-size: $h2-size-large;
+      line-height: $h2-line-height-large;
+      @media (max-width: 767px) and (min-width: 568px) {
+        font-size: $h2-size-medium;
+        line-height: $h2-line-height-medium;
+      }
+      @media (max-width: 567px) {
+        font-size: $h2-size-small;
+        line-height: $h2-line-height-small;
+      }
+    }
+  }
+  &__circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    @media (max-width: 767px) and (min-width: 568px) {
+      width: 96px;
+      height: 96px;
+    }
+    @media (max-width: 567px) {
+      width: 48px;
+      height: 48px;
+    }
+    &--oldlace {
+      background-color: $oldlace;
+    }
+    &--brown {
+      background-color: $coyotes;
+    }
+    &--teal {
+      background-color: $teal;
+    }
+  }
+}

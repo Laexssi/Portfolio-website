@@ -1,0 +1,88 @@
+.bio {
+  background-color: white;
+  &__container {
+    padding-top: $vr4-large;
+    padding-bottom: $vr4-large;
+    display: flex;
+    align-items: center;
+    @media (max-width: 1023px) {
+      padding-top: $vr4-medium;
+      padding-bottom: $vr4-medium;
+    }
+    @media (max-width: 767px) {
+      padding-top: $vr4-medium-small;
+      padding-bottom: $vr4-medium-small;
+    }
+    @media (max-width: 567px) {
+      padding-top: $vr4-small;
+      padding-bottom: $vr4-small;
+    }
+  }
+  &__photo {
+    max-width: 336px;
+    width: 27.5vw;
+    flex-shrink: 0;
+    img {
+      height: auto;
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__info {
+    position: relative;
+    padding-left: 10%;
+    text-align: left;
+    font-style: normal;
+    font-family: $base-font-family;
+    @media (max-width: 767px) {
+      padding-left: 0;
+    }
+
+    h2 {
+      font-weight: 900;
+      text-transform: uppercase;
+      color: black;
+      font-size: $h2-size-large;
+      line-height: $h2-line-height-large;
+      margin-bottom: $vr3-large;
+      @media (max-width: 767px) {
+        text-align: center;
+        &::before {
+          content: url("../assets/images/photo-medium.png");
+          position: absolute;
+          left: 0;
+          top: -16px;
+        }
+      }
+      @media (max-width: 567px) {
+        text-align: center;
+        font-size: $h2-size-small;
+        line-height: $h2-line-height-small;
+        &::before {
+          content: url("../assets/images/photo-small.png");
+          position: absolute;
+          left: 0;
+          top: -8px;
+        }
+      }
+    }
+    p {
+      font-size: $p-size;
+      line-height: $p-line-height;
+      margin-bottom: $vr2-large;
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: $vr2-small;
+      }
+      @media (max-width: 567px) {
+        font-size: $p-size-small;
+        line-height: $p-line-height-small;
+      }
+    }
+  }
+}

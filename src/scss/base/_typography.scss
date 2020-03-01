@@ -1,0 +1,20 @@
+h2 {
+  font-size: $h1-size-large;
+  line-height: $h1-line-height-large;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: $vr3-large;
+  @media (max-width: 1023px) and (min-width: 768px) {
+    font-size: $h1-size-medium;
+    line-height: $h1-line-height-medium;
+  }
+  @media (min-width: 568px) and (max-width: 767px) {
+    font-size: $h1-size-medium-small;
+    line-height: $h1-line-height-medium-small;
+  }
+  @media (max-width: 567px) {
+    font-size: $h1-size-small;
+    line-height: $h1-line-height-small;
+  }
+}

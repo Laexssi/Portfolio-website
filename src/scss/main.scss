@@ -1,5 +1,12 @@
-div {
-  color: pink;
-  transition: all;
-  display: flex;
-}
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/html";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/bio";
+@import "layout/skills";
+@import "layout/codewars";
+@import "layout/works";

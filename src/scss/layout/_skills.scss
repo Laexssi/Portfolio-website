@@ -1,0 +1,120 @@
+.skills {
+  background-color: $oldlace;
+  &__container {
+    padding-top: $vr4-large;
+    padding-bottom: $vr4-large;
+
+    @media (max-width: 1023px) {
+      padding-top: $vr4-medium;
+      padding-bottom: $vr4-medium;
+    }
+    @media (max-width: 767px) {
+      padding-top: $vr4-medium-small;
+      padding-bottom: $vr4-medium-small;
+    }
+    @media (max-width: 567px) {
+      padding-top: $vr4-small;
+      padding-bottom: $vr4-small;
+    }
+
+    h2 {
+      @media (max-width: 567px) {
+        margin-bottom: $vr3-small;
+      }
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+  &__info {
+    flex: 1 1 0px;
+    display: block;
+    &:nth-of-type(1) {
+      margin-right: $vr1-large;
+      @media (max-width: 767px) and (min-width: 568px) {
+        margin-right: 0px;
+        margin-bottom: $vr3-large;
+      }
+      @media (max-width: 567px) {
+        margin-right: 0px;
+        margin-bottom: $vr3-small;
+      }
+    }
+    &--teal {
+      color: $teal;
+    }
+    &--brown {
+      color: $coyotes;
+    }
+
+    h3 {
+      font-size: $h3-size-large;
+      line-height: $h3-line-height-large;
+      font-weight: 900;
+      text-transform: uppercase;
+      border-bottom: 8px solid;
+      margin-bottom: $vr3-large;
+      @media (max-width: 567px) {
+        margin-bottom: $vr3-small;
+        font-size: $h3-size-small;
+        line-height: $h3-line-height-small;
+      }
+    }
+  }
+  &__item {
+    margin-bottom: $vr1-large;
+    padding-left: 40px;
+    position: relative;
+    &:nth-last-of-type(1) {
+      margin-bottom: 0px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      left: 11px;
+      top: 11px;
+      border-radius: 50%;
+      @media (max-width: 567px) {
+        width: 7.5px;
+        height: 7.5px;
+        left: 8.5px;
+        top: 8.5px;
+      }
+    }
+    &--teal::before {
+      background-color: $teal;
+    }
+    &--brown::before {
+      background-color: $coyotes;
+    }
+    @media (max-width: 567px) {
+      margin-bottom: $vr1-small;
+      padding-left: 28px;
+    }
+    h4 {
+      font-size: $h4-size-large;
+      line-height: $h4-line-height-large;
+      text-transform: uppercase;
+      font-weight: 900;
+      @media (max-width: 567px) {
+        font-size: $h4-size-small;
+        line-height: $h4-line-height-small;
+      }
+    }
+    p {
+      color: black;
+      @media (max-width: 567px) {
+        font-size: $h4-size-small;
+        line-height: $h4-line-height-small;
+      }
+    }
+  }
+}
