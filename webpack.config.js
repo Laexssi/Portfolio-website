@@ -8,7 +8,8 @@ module.exports = {
   entry: { main: "./src/index.js" },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].[contenthash].js"
+    filename: "[name].[contenthash].js",
+    publicPath: "/Portfolio/"
   },
   module: {
     rules: [

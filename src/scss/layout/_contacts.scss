@@ -1,0 +1,110 @@
+.contacts {
+  background-color: $oldlace;
+  &__container {
+    padding-top: $vr4-large;
+    padding-bottom: $vr4-large;
+  }
+
+  h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: black;
+    font-size: $h2-size-large;
+    line-height: $h2-line-height-large;
+    margin-bottom: $vr3-large;
+    margin-right: 24px;
+    @media (max-width: 567px) {
+      font-size: $h2-size-medium;
+      line-height: $h2-line-height-medium;
+    }
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: $vr3-large;
+    span {
+      font-size: $h4-size-large;
+      line-height: $h4-line-height-large;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+  }
+
+  &__social {
+    display: flex;
+    li {
+      margin-right: 32px;
+
+      &:nth-last-of-type(1) {
+        margin-right: 0px;
+      }
+
+      @media (max-width: 767px) {
+        margin-right: 16px;
+      }
+
+      img {
+        @media (max-width: 767px) {
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+  &__message {
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        color: $teal;
+        cursor: pointer;
+      }
+    }
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    li {
+      padding-left: 72px;
+      display: block;
+      position: relative;
+      margin-right: 64px;
+      margin-bottom: 32px;
+      font-size: $h4-size-large;
+      line-height: $h4-line-height-large;
+      text-transform: uppercase;
+      font-weight: 900;
+      &:nth-last-of-type(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+  &__gmail {
+    &::before {
+      content: url("../assets/images/gmail.svg");
+      position: absolute;
+      top: -4px;
+      left: 0;
+    }
+  }
+  &__telegram {
+    &::before {
+      content: url("../assets/images/telegram.svg");
+      position: absolute;
+      top: -4px;
+      left: 0;
+    }
+  }
+  &__phone {
+    &::before {
+      content: url("../assets/images/phone.svg");
+      position: absolute;
+      top: -4px;
+      left: 0;
+    }
+  }
+}
