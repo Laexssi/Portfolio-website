@@ -1,9 +1,9 @@
 import "./scss/main.scss";
 require("regenerator-runtime/runtime");
+var ghpages = require("gh-pages");
 
-const API_KEY = "D-qTnXA-fn3CMsz3xYB5";
-const testUrl =
-  "https://www.codewars.com/api/v1/code-challenges/valid-braces?access_key=some-D-qTnXA-fn3CMsz3xYB5";
+ghpages.publish("dist", function(err) {});
+
 const statsUrl =
   "https://www.codewars.com/api/v1/users/Laexssi/code-challenges/completed?page=0";
 

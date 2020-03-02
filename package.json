@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "Portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production --watch",
     "start:dev": "webpack-dev-server",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Kirill Serkov",
   "license": "ISC",
