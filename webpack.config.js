@@ -38,12 +38,37 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif|svg|ico)$/i,
         use: [
-          "file-loader",
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "./images",
+              publicPath: "./images"
+            }
+          },
           {
             loader: "image-webpack-loader",
+
             options: {
-              bypassOnDebug: true, // webpack@1.x
-              disable: true // webpack@2.x and newer
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false
+              },
+              pngquant: {
+                quality: [0.65, 0.9],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              },
+              // the webp option will enable WEBP
+              webp: {
+                quality: 75
+              }
             }
           }
         ]

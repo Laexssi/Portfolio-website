@@ -40,10 +40,6 @@
         margin-right: 0px;
         margin-bottom: $vr3-large;
       }
-      @media (max-width: 567px) {
-        margin-right: 0px;
-        margin-bottom: $vr3-small;
-      }
     }
     &--teal {
       color: $teal;
@@ -70,6 +66,7 @@
     margin-bottom: $vr1-large;
     padding-left: 40px;
     position: relative;
+
     &:nth-last-of-type(1) {
       margin-bottom: 0px;
     }
