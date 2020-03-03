@@ -1,6 +1,12 @@
 html {
   scroll-behavior: smooth;
   font-family: $base-font-family;
+
+  body {
+    position: relative;
+    width: 100%;
+  }
+
   .container {
     margin: 0 auto;
     max-width: $container-width-large;

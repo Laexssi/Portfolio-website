@@ -1,14 +1,15 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development --watch",
-    "build": "webpack --mode production --watch",
+    "build": "webpack",
     "start:dev": "webpack-dev-server",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "postbuild": "gh-pages -d dist"
   },
   "author": "Kirill Serkov",
   "license": "ISC",

@@ -35,7 +35,7 @@
     flex: 1 1 0px;
     display: block;
     &:nth-of-type(1) {
-      margin-right: $vr1-large;
+      margin-right: $vr3-large;
       @media (max-width: 767px) {
         margin-right: 0px;
         margin-bottom: $vr3-large;
@@ -52,6 +52,7 @@
       font-size: $h3-size-large;
       line-height: $h3-line-height-large;
       font-weight: 900;
+
       text-transform: uppercase;
       border-bottom: 8px solid;
       margin-bottom: $vr3-large;

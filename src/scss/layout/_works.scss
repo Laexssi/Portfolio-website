@@ -100,13 +100,14 @@
         flex: 1 1 0px;
         font-size: $p-size;
         line-height: $p-line-height;
-
+        @media (max-width: 767px) {
+          font-size: $p-size-small;
+          line-height: $p-line-height-small;
+        }
         p {
           margin-bottom: $vr1-large;
           @media (max-width: 767px) {
             margin-bottom: $vr2-small;
-            font-size: $p-size-small;
-            line-height: $p-line-height-small;
           }
         }
         a {

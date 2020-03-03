@@ -81,6 +81,10 @@
       &:nth-last-of-type(1) {
         margin-right: 0px;
       }
+      @media (max-width: 767px) {
+        font-size: $h4-size-small;
+        line-height: $h4-line-height-small;
+      }
     }
   }
   &__gmail {
