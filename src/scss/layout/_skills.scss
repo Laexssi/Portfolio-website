@@ -36,7 +36,7 @@
     display: block;
     &:nth-of-type(1) {
       margin-right: $vr1-large;
-      @media (max-width: 767px) and (min-width: 568px) {
+      @media (max-width: 767px) {
         margin-right: 0px;
         margin-bottom: $vr3-large;
       }

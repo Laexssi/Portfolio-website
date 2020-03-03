@@ -105,6 +105,8 @@
           margin-bottom: $vr1-large;
           @media (max-width: 767px) {
             margin-bottom: $vr2-small;
+            font-size: $p-size-small;
+            line-height: $p-line-height-small;
           }
         }
         a {
