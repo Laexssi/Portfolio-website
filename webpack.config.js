@@ -84,7 +84,8 @@ module.exports = {
       infect: false,
       hash: true,
       template: "./src/index.html",
-      filename: "index.html"
+      filename: "index.html",
+      favicon: "./src//assets/images/favicon.png"
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([{ from: "./src/assets/images", to: "./images" }])

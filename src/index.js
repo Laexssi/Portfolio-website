@@ -1,8 +1,8 @@
 import "./scss/main.scss";
 require("regenerator-runtime/runtime");
-// var ghpages = require("gh-pages");
+var ghpages = require("gh-pages");
 
-// ghpages.publish("dist", function(err) {});
+ghpages.publish("dist", function(err) {});
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 const statsUrl =
   "https://www.codewars.com/api/v1/users/Laexssi/code-challenges/completed?page=0";
